@@ -65,6 +65,13 @@ class MultipleEntityRowChores extends LitElement {
         if (!this._hass || !this.config) return html``;
         if (!this.stateObj) return this.renderWarning();
 
+        console.log({
+            stateObj: this.stateObj,
+            info: this.info,
+            entities: this.entities,
+            config: this.config,
+        });
+
         return html`<hui-generic-entity-row
             .hass="${this._hass}"
             .config="${this.config}"
@@ -84,7 +91,7 @@ class MultipleEntityRowChores extends LitElement {
             stateObj: this.stateObj,
             config: this.config,
         });
-        
+
         if (
             !this.config.secondary_info ||
             hasGenericSecondaryInfo(this.config.secondary_info) ||
