@@ -78,6 +78,13 @@ class MultipleEntityRowChores extends LitElement {
     }
 
     renderSecondaryInfo() {
+        console.log({
+            info: this.info,
+            secondary_info: this.config.secondary_info,
+            stateObj: this.stateObj,
+            config: this.config,
+        });
+        
         if (
             !this.config.secondary_info ||
             hasGenericSecondaryInfo(this.config.secondary_info) ||
@@ -89,12 +96,7 @@ class MultipleEntityRowChores extends LitElement {
             return html`${this.config.secondary_info}`;
         }
 
-        console.log({
-            info: this.info,
-            secondary_info: this.config.secondary_info,
-            stateObj: this.stateObj,
-            config: this.config,
-        });
+        
         const name = entityName(this.info, this.config.secondary_info);
         return html`${name} ${this.renderValue(this.info, this.config.secondary_info)}`;
     }
