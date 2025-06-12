@@ -25,7 +25,6 @@ export const entityName = (stateObj, config) => {
 };
 
 export const entityStateDisplay = (hass, stateObj, config) => {
-    console.log({ stateObj, config });
     if (isUnavailable(stateObj)) {
         return hass.localize(`state.default.${stateObj.state}`);
     }
