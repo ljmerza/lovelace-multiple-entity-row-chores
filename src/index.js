@@ -78,10 +78,6 @@ class MultipleEntityRowChores extends LitElement {
     }
 
     renderSecondaryInfo() {
-        this.config.secondary_info.entity = this.config
-            .replace('input_boolean', 'input_text')
-            .replace('_chore', 'date');
-
         if (
             !this.config.secondary_info ||
             hasGenericSecondaryInfo(this.config.secondary_info) ||
