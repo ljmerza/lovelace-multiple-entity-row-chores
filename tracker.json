@@ -1,9 +1,9 @@
 {
-  "multiple-entity-row": {
+  "multiple-entity-row-chores": {
     "updated_at": "2024-02-22",
     "version": "4.5.1",
-    "remote_location": "https://raw.githubusercontent.com/benct/lovelace-multiple-entity-row-chores/master/multiple-entity-row.js",
-    "visit_repo": "https://github.com/benct/lovelace-multiple-entity-row-chores",
-    "changelog": "https://github.com/benct/lovelace-multiple-entity-row-chores/blob/master/CHANGELOG.md"
+    "remote_location": "https://raw.githubusercontent.com/ljmerza/lovelace-multiple-entity-row-chores/master/multiple-entity-row-chores.js",
+    "visit_repo": "https://github.com/ljmerza/lovelace-multiple-entity-row-chores",
+    "changelog": "https://github.com/ljmerza/lovelace-multiple-entity-row-chores/blob/master/CHANGELOG.md"
   }
 }
