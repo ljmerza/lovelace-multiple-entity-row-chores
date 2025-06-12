@@ -88,6 +88,13 @@ class MultipleEntityRowChores extends LitElement {
         if (typeof this.config.secondary_info === 'string') {
             return html`${this.config.secondary_info}`;
         }
+
+        console.log({
+            info: this.info,
+            secondary_info: this.config.secondary_info,
+            stateObj: this.stateObj,
+            config: this.config,
+        });
         const name = entityName(this.info, this.config.secondary_info);
         return html`${name} ${this.renderValue(this.info, this.config.secondary_info)}`;
     }
