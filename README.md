@@ -2,10 +2,10 @@
 
 Show multiple entity states, attributes and icons on entity rows in Home Assistant's Lovelace UI
 
-[![GH-release](https://img.shields.io/github/v/release/benct/lovelace-multiple-entity-row.svg?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row/releases)
-[![GH-downloads](https://img.shields.io/github/downloads/benct/lovelace-multiple-entity-row/total?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row/releases)
-[![GH-last-commit](https://img.shields.io/github/last-commit/benct/lovelace-multiple-entity-row.svg?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row/commits/master)
-[![GH-code-size](https://img.shields.io/github/languages/code-size/benct/lovelace-multiple-entity-row.svg?color=red&style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row)
+[![GH-release](https://img.shields.io/github/v/release/benct/lovelace-multiple-entity-row-chores.svg?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row-chores/releases)
+[![GH-downloads](https://img.shields.io/github/downloads/benct/lovelace-multiple-entity-row-chores/total?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row-chores/releases)
+[![GH-last-commit](https://img.shields.io/github/last-commit/benct/lovelace-multiple-entity-row-chores.svg?style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row-chores/commits/master)
+[![GH-code-size](https://img.shields.io/github/languages/code-size/benct/lovelace-multiple-entity-row-chores.svg?color=red&style=flat-square)](https://github.com/benct/lovelace-multiple-entity-row-chores)
 [![hacs_badge](https://img.shields.io/badge/HACS-Default-orange.svg?style=flat-square)](https://github.com/hacs)
 <a href="https://www.buymeacoffee.com/benct"><img src="https://cdn.buymeacoffee.com/buttons/default-yellow.png" height="20"></a>
 
@@ -13,7 +13,7 @@ Show multiple entity states, attributes and icons on entity rows in Home Assista
 
 ## Installation
 
-Manually add [multiple-entity-row.js](https://raw.githubusercontent.com/benct/lovelace-multiple-entity-row/master/multiple-entity-row.js)
+Manually add [multiple-entity-row.js](https://raw.githubusercontent.com/benct/lovelace-multiple-entity-row-chores/master/multiple-entity-row.js)
 to your `<config>/www/` folder and add the following to the `configuration.yaml` file:
 ```yaml
 lovelace:
@@ -26,7 +26,7 @@ _OR_ install using [HACS](https://hacs.xyz/) and add this (if in YAML mode):
 ```yaml
 lovelace:
   resources:
-    - url: /hacsfiles/lovelace-multiple-entity-row/multiple-entity-row.js
+    - url: /hacsfiles/lovelace-multiple-entity-row-chores/multiple-entity-row.js
       type: module
 ```
 
@@ -165,7 +165,7 @@ or as an object with one or more of the options listed below.
 
 ## Examples
 
-![multiple-entity-row](https://raw.githubusercontent.com/benct/lovelace-multiple-entity-row/master/example.png)
+![multiple-entity-row](https://raw.githubusercontent.com/benct/lovelace-multiple-entity-row-chores/master/example.png)
 
 ```yaml
 type: entities
@@ -341,7 +341,7 @@ entities:
 ## My cards
 
 [xiaomi-vacuum-card](https://github.com/benct/lovelace-xiaomi-vacuum-card) |
-[multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row) |
+[multiple-entity-row](https://github.com/benct/lovelace-multiple-entity-row-chores) |
 [github-entity-row](https://github.com/benct/lovelace-github-entity-row) |
 [battery-entity-row](https://github.com/benct/lovelace-battery-entity-row) |
 [~~attribute-entity-row~~](https://github.com/benct/lovelace-attribute-entity-row)

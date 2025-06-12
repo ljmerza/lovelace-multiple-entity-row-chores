@@ -92,7 +92,7 @@ All notable changes to this project will be documented in this file.
 ## 4.0.0
 
 This release includes a major refactoring of the codebase, but should not contain any (significant) breaking changes.
-Please report any bugs or issues [here](https://github.com/benct/lovelace-multiple-entity-row/issues).
+Please report any bugs or issues [here](https://github.com/benct/lovelace-multiple-entity-row-chores/issues).
 
 **Added:**
 - Support showing `attribute` instead of state on main entity (#124)

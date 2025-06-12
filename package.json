@@ -12,7 +12,7 @@
     "row"
   ],
   "module": "multiple-entity-row-chores.js",
-  "repository": "https://github.com/benct/lovelace-multiple-entity-row.git",
+  "repository": "https://github.com/benct/lovelace-multiple-entity-row-chores.git",
   "author": "benct <ben@tomlin.no>",
   "license": "MIT",
   "dependencies": {
