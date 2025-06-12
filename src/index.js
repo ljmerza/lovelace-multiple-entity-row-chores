@@ -65,13 +65,6 @@ class MultipleEntityRowChores extends LitElement {
         if (!this._hass || !this.config) return html``;
         if (!this.stateObj) return this.renderWarning();
 
-        console.log({
-            stateObj: this.stateObj,
-            info: this.info,
-            entities: this.entities,
-            config: this.config,
-        });
-
         return html`<hui-generic-entity-row
             .hass="${this._hass}"
             .config="${this.config}"
@@ -85,12 +78,9 @@ class MultipleEntityRowChores extends LitElement {
     }
 
     renderSecondaryInfo() {
-        console.log({
-            info: this.info,
-            secondary_info: this.config.secondary_info,
-            stateObj: this.stateObj,
-            config: this.config,
-        });
+        this.config.secondary_info.entity = this.config
+            .replace('input_boolean', 'input_text')
+            .replace('_chore', 'date');
 
         if (
             !this.config.secondary_info ||
