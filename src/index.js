@@ -7,7 +7,7 @@ import { getEntityIds, hasConfigOrEntitiesChanged, hasGenericSecondaryInfo, hide
 import { style } from './styles';
 
 console.info(
-    '%c MULTIPLE-ENTITY-ROW-CHORES %c 10.1.3 ',
+    '%c MULTIPLE-ENTITY-ROW-CHORES %c 10.1.4 ',
     'color: cyan; background: black; font-weight: bold;',
     'color: darkblue; background: white; font-weight: bold;'
 );
@@ -46,13 +46,6 @@ class MultipleEntityRowChores extends LitElement {
             this.stateObj = hass.states[this.config.entity];
             const second_id = this.config.entity.replace('input_boolean', 'input_text').replace('_chore', '_date');
             this.info = hass.states[second_id] ?? this.stateObj;
-
-            console.log({
-                stateObj: this.stateObj,
-                info: this.info,
-                second_id,
-                entityIds: this.entityIds,
-            });
 
             this.entities =
                 this.config.entities?.map((config) => {

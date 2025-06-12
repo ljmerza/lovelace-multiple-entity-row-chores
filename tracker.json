@@ -1,7 +1,7 @@
 {
   "multiple-entity-row-chores": {
-    "updated_at": "2025-02-25",
-    "version": "10.1.3",
+    "updated_at": "2025-02-26",
+    "version": "10.1.4",
     "remote_location": "https://raw.githubusercontent.com/ljmerza/lovelace-multiple-entity-row-chores/master/multiple-entity-row-chores.js",
     "visit_repo": "https://github.com/ljmerza/lovelace-multiple-entity-row-chores",
     "changelog": "https://github.com/ljmerza/lovelace-multiple-entity-row-chores/blob/master/CHANGELOG.md"
