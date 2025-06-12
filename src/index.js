@@ -44,7 +44,7 @@ class MultipleEntityRowChores extends LitElement {
 
         if (hass && this.config) {
             this.stateObj = hass.states[this.config.entity];
-            const second_id = this.config.entity.replace('input_boolean', 'input_text').replace('_chore', 'date');
+            const second_id = this.config.entity.replace('input_boolean', 'input_text').replace('_chore', '_date');
             this.info = hass.states[second_id] ?? this.stateObj;
 
             console.log({
