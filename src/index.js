@@ -78,6 +78,13 @@ class MultipleEntityRowChores extends LitElement {
     }
 
     renderSecondaryInfo() {
+        if (
+            !this.config.secondary_info ||
+            hasGenericSecondaryInfo(this.config.secondary_info) ||
+            hideIf(this.info, this.config.secondary_info)
+        ) {
+            return null;
+        }
         if (typeof this.config.secondary_info === 'string') {
             return html`${this.config.secondary_info}`;
         }
